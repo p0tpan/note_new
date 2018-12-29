@@ -56,6 +56,11 @@ var removeNote = (title) => {
   return notes.length != revisedNotes.length;
 };
 
+var logNote = (note) =>{
+  console.log('--');
+  console.log('Title: ' + note.title);
+  console.log('Body: ' + note.body);
+};
 
 
 module.exports = {
@@ -63,4 +68,5 @@ module.exports = {
   getAll,
   getNote,
   removeNote,
+  logNote,
 };
